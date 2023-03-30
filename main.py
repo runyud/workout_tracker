@@ -2,12 +2,12 @@ import requests
 import os
 from datetime import datetime
 
-APP_ID = os.environ.get("EXERCISE_APP_ID")
-API_KEY = os.environ.get("EXERCISE_API_KEY")
-WORKOUT_KEY = os.environ.get("WORKOUT_KEY")
-WORKOUT_ENDPOINT = os.environ.get("WORKOUT_ENDPOINT")
-EXERCISE_ENDPOINT = os.environ.get("EXERCISE_ENDPOINT")
-WORKOUT_BEARER_TOKEN = os.environ.get("WORKOUT_BEARER_TOKEN")
+APP_ID = os.environ.get("NUTRITIONIX_APP_ID")
+API_KEY = os.environ.get("NUTRITIONIX_API_KEY")
+WORKOUT_KEY = os.environ.get("SHEETY_KEY")
+WORKOUT_ENDPOINT = os.environ.get("SHEETY_ENDPOINT")
+EXERCISE_ENDPOINT = os.environ.get("NUTRITIONIX_ENDPOINT")
+WORKOUT_BEARER_TOKEN = os.environ.get("SHEETY_BEARER_TOKEN")
 
 headers = {
     "x-app-id": APP_ID,
