@@ -2,8 +2,8 @@ import requests
 import os
 from datetime import datetime
 
-APP_ID = os.environ.get("APP_ID")
-API_KEY = os.environ.get("API_KEY")
+APP_ID = os.environ.get("EXERCISE_APP_ID")
+API_KEY = os.environ.get("EXERCISE_API_KEY")
 WORKOUT_KEY = os.environ.get("WORKOUT_KEY")
 WORKOUT_ENDPOINT = os.environ.get("WORKOUT_ENDPOINT")
 EXERCISE_ENDPOINT = os.environ.get("EXERCISE_ENDPOINT")
