@@ -28,6 +28,7 @@ workout_headers = {
 }
 
 response = requests.post(url=EXERCISE_ENDPOINT, json=request_body, headers=headers)
+response.raise_for_status()
 exercises = response.json()['exercises']
 
 for exercise in exercises:
@@ -42,4 +43,5 @@ for exercise in exercises:
     }
     workout_res = requests.post(url=f"{WORKOUT_ENDPOINT}/{WORKOUT_KEY}/copyOfMyWorkouts/workouts", json=workout_body,
                                 headers=workout_headers)
+    workout_res.raise_for_status()
     print(workout_res.json())
